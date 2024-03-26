@@ -1,0 +1,99 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    overflow: hidden;
+}
+.game-containne{
+    background-color: #83cdf2;
+    width: 100%;
+}
+
+.shooter1{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    background-image: url();
+    background-size: cover;
+    background-color: black;
+}
+.game-body{
+    display: grid;
+   
+    grid-template-columns: repeat(2,200px);
+    grid-template-rows: repeat(2,200px);
+    grid-row:2/3 ;
+    grid-column:1/2 ;
+    
+}
+.shootestart{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+._1s1, ._1s2, ._2s1, ._2s2,._3s1{
+    background-color: #83cdf2;
+    display: flex;
+    justify-content:center;
+    
+}
+
+.snack{
+    position: relative;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(per.jpg);
+    background-size: cover;
+    
+}
+.snackUpLeft{
+    position: relative;
+    align-self: center;
+    width: 90%;
+    height: 90%;
+    background-image: url(Up.jpg);
+    background-size: cover;
+    animation: Up 1s ease;
+    transition: 2s;
+}
+@keyframes Up {
+    0%{
+        bottom: -200px;
+    }
+    50%{
+        bottom: 0;
+    }
+    100%{
+        bottom: -200px ;
+    }
+}
+.snackUp{
+    position: relative;
+    align-self: center;
+    width: 90%;
+    height: 90%;
+    background-image: url(Up.jpg);
+    background-size: cover;
+    animation: UpL 1s ease;
+    transition: 1s;
+}
+@keyframes UpL {
+    0%{
+        bottom: 0px;
+        left: 0;
+    }
+    
+    50%{
+        bottom: 100px;
+        left: 100px;
+        
+    }
+    100%{
+        left: 200px;
+        bottom: 0px ;
+        
+    }
+}
